@@ -1,7 +1,26 @@
 # Dataset
 
+VSDB_100.json
+```
+[
+    {
+        "wav": "00000.wav",
+        "class": "[2F0NM]",
+        "text": "Thưa các bạn, để có thể nhanh chóng biết tin về toàn bộ tình hình xảy ra, Bô khâu ở trong phòng nhân viên đợi cờ rê mơ trở về",
+        "duration": 8.482563,
+        "editedby": "B21DCVT013"
+    },
+    {
+        "wav": "00001.wav",
+        "class": "[2F0NM]",
+        "text": "cờ rê mơ thông báo mọi điều cho Bô khâu biết",
+        "duration": 2.55825,
+        "editedby": "B21DCVT013"
+    }
+]
 ```
 VSDB_train.json
+```
 {
     "ex0": {
         "wav": "36688.wav",
@@ -16,13 +35,6 @@ VSDB_train.json
         "text": "Thay mặt ủy ban kiểm tra trung ương ông Trần Cẩm Tú chủ nhiệm ủy ban kiểm tra trung ương tiếp thu ý kiến chỉ đạo của đồng chí trưởng đoàn kiểm tra",
         "duration": 6.335687,
         "editedby": "B21DCCN599"
-    },
-    "ex2": {
-        "wav": "02432.wav",
-        "class": "[ phát biểu , nam , nam , 50, nghiêm túc]",
-        "text": "ngay từ kì họp thứ hai  ủy an thường vụ quốc hội đã thống nhất với chính phủ về chủ trương và tích cực chỉ đạo chuẩn bị nội dung",
-        "duration": 9.046062,
-        "editedby": "B21DCVT013"
     }
 }
 ```
@@ -33,25 +45,25 @@ Download the dataset from [here](https://drive.google.com/drive/folders/1tiPKaIO
 ## Transformer
 ```
 cd transformer_asr
-python transformer_words_train.py hparams/Transformer.yaml
+python transformer_words_train.py hparams/Transformer.yaml --dataset_dir <path to dataset>
 ```
 ## Transformer with  SpecAugmentation
 ```
 cd transformer_asr
-python transformer_words_train.py hparams/Transformer_SpecAugment.yaml
+python transformer_words_train.py hparams/Transformer_SpecAugment.yaml --dataset_dir <path to dataset>
 ```
 ## Transformer with Adaptive SpecAugmentation
 ```
 cd transformer_asr
-python transformer_words_train.py hparams/Transformer_AdaptiveSpecAugment.yaml
+python transformer_words_train.py hparams/Transformer_AdaptiveSpecAugment.yaml --dataset_dir <path to dataset>
 ```
 ## LAS
 ```
 cd las_asr
-python las_train.py hparams/LAS.yaml
+python las_train.py hparams/LAS.yaml --dataset_dir <path to dataset>
 ```
 ## LAS with SpecAugmentation
 ```
 cd las_asr
-python las_train.py hparams/LAS_SpecAugment.yaml
+python las_train.py hparams/LAS_SpecAugment.yaml --dataset_dir <path to dataset>
 ```

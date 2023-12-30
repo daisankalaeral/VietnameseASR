@@ -40,6 +40,13 @@ VSDB_train.json
 ```
 Download the dataset from [here](https://drive.google.com/drive/folders/1tiPKaIOC7bt6isv5qFqf61O_2jFK8ZOI)
 
+# Requirements
+```
+HyperPyYAML==1.1.0
+numpy==1.23.5
+speechbrain==0.5.15
+torch==1.13.1
+```
 # Training
 
 ## Transformer

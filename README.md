@@ -1,4 +1,5 @@
-# Dataset Structure
+# Dataset
+
 ```
 VSDB_train.json
 {
@@ -25,8 +26,7 @@ VSDB_train.json
     }
 }
 ```
-# Training, valid
-
+Download the dataset from [here](https://drive.google.com/drive/folders/1tiPKaIOC7bt6isv5qFqf61O_2jFK8ZOI)
 
 # Training
 

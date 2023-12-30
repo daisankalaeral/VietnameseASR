@@ -1,6 +1,6 @@
 # Dataset
 
-VSDB_100.json
+LSVSC_100.json
 ```
 [
     {
@@ -19,7 +19,7 @@ VSDB_100.json
     }
 ]
 ```
-VSDB_train.json
+LSVSC_train.json
 ```
 {
     "ex0": {

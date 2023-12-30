@@ -21,7 +21,7 @@ def load_label_json(labels_path):
             
         return word2index, index2word
 
-word2index, index2word = load_label_json('../VSDB_100_vocab.json')
+word2index, index2word = load_label_json('../LSVSC_100_vocab.json')
 print(len(word2index))
 sos_token, eos_token, pad_token = word2index['<s>'], word2index['</s>'], word2index['_']
 

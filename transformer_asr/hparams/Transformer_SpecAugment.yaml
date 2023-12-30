@@ -9,9 +9,9 @@ wer_file: !ref <output_dir>/wer.txt
 save_folder: !ref <output_dir>/save
 train_log: !ref <output_dir>/train_log.txt
 
-train_dataset: "../VSDB_train.json"
-valid_dataset: "../VSDB_valid.json"
-test_dataset: "../VSDB_test.json"
+train_dataset: "../LSVSC_train.json"
+valid_dataset: "../LSVSC_valid.json"
+test_dataset: "../LSVSC_test.json"
 dataset_dir: "/home/datasets/dsp_new_100h/data"
 
 # Training parameters

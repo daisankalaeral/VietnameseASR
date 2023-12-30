@@ -4,7 +4,7 @@ set_cuda_seed: !apply:torch.cuda.manual_seed_all [!ref <seed>]
 set_np_seed: !apply:numpy.random.seed [!ref <seed>]
 set_random_seed: !apply:random.seed [!ref <seed>]
 
-output_dir: !ref results/min5_ps_pm_0.04_f20/123456
+output_dir: !ref results/Transformer_AdaptiveSpecAugment
 wer_file: !ref <output_dir>/wer.txt
 save_folder: !ref <output_dir>/save
 train_log: !ref <output_dir>/train_log.txt
@@ -15,7 +15,7 @@ test_dataset: "../VSDB_test.json"
 dataset_dir: "/home/datasets/dsp_new_100h/data"
 
 # Training parameters
-number_of_epochs: 150
+number_of_epochs: 100
 batch_size: 32
 ctc_weight: 0.3
 grad_accumulation_factor: 1

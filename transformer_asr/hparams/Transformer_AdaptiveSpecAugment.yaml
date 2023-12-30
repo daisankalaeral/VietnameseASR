@@ -81,7 +81,7 @@ augmentation: !new:adaptive_augment.AdaptiveSpecAugment
    replace_with_zero: False
    freq_mask_width: 20
    time_mask_width: 0.04 # Automatically use normal augmentation if time_mask_width is an integer
-   max_n_mask: 2
+   max_n_mask: 2 # Only effective when adaptive spec augmentation is used
 
 CNN: !new:speechbrain.lobes.models.convolution.ConvolutionFrontEnd
     input_shape: (8, 10, 80)
